@@ -1,5 +1,9 @@
 # Sistema de Recomendação - Conceitos
 
+### Alunos:
+- Felipe Nicoletti Reis Mario
+- Gabriel Fernandes Giraud
+
 ## Configurando o banco de dados
 
 Para executar esse projeto é necessário ter instalado na maquina o BD Maria DB
