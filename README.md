@@ -26,3 +26,6 @@ port=<PORTA MARIADB>
 database=<NOME DA BASE DE DADOS MARIADB>
 table=<NOME DA TABELA MARIADB>
 ```
+
+## Para executar a aplicação
+```python run.py```
