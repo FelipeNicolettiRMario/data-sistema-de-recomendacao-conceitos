@@ -1,3 +1,4 @@
+from logging import error
 from termcolor import colored
 from services.recomendation_service import RecomendationService
 
@@ -24,6 +25,7 @@ class RecomendationInterface:
             try:
                 process[option_selected]()
                 print(colored("Operação realizada com sucesso, voltando ao menu...\n\n",'yellow'))
-            except:
+            except Exception as e:
+                print(e)
                 print(colored("Operação invalida, voltando ao menu...\n\n",'red'))
             self.start()
