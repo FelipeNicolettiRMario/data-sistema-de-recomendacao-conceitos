@@ -6,14 +6,18 @@ class RecomendationService:
     def __init__(self) -> None:
         self.db = DatabaseOperator()
 
-    def analyse_itens(self,itens: list) -> str:
+    def analyse_itens(self,itens: list) :
 
-        items_in_database = self.db.get_itens_by_name(itens)
-        recomended_items = []
+        recomended_items = set()
 
-        for id_item,name_item,recomendation_item in items_in_database:
-            
+        items_in_compound_rule = self.db.get_itens_in_compound_rule(itens)
+        for items in items_in_compound_rule:
+            recomended_items.add(items)
+
+        itens_in_rule = self.db.get_itens_in_rule(itens)
+
+        for recomendation_item in itens_in_rule:
             if recomendation_item not in itens:
-                recomended_items.append(recomendation_item)
-        
+                recomended_items.add(recomendation_item)
+
         print(colored(f"Itens recomendados com base no carrinho: {recomended_items}\n",'blue'))
