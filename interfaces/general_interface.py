@@ -11,7 +11,7 @@ class GeneralInterface:
     def start(self):
 
         print("BEM VINDO! Escolha uma das opções abaixo para prosseguir...\n")
-        option_selected = input(colored("1.Gerenciar Regras\n2.Utilizar sistema de recomendação\n4.Criação de regras com analise apriori\n3.Sair\n\n->",'green'))
+        option_selected = input(colored("1.Gerenciar Regras\n2.Utilizar sistema de recomendação\n3.Criação de regras com analise apriori\n4.Sair\n\n->",'green'))
 
         if option_selected == "1":
             DatabaseInterface().start()
