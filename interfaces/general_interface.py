@@ -21,11 +21,11 @@ class GeneralInterface:
             RecomendationInterface().start()
             self.start()
 
-        elif option_selected == "4":
+        elif option_selected == "3":
             AprioriInterface('transaction').start()
             self.start()
             
-        elif option_selected == "3":
+        elif option_selected == "4":
             print(colored("SAINDO DO SISTEMA...",'yellow'))
             sys.exit()
 
