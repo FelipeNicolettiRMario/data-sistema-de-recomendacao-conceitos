@@ -18,7 +18,7 @@ Para baixar dependências bastar executar o seguinte comando:
 
 Além disso será necessário baixar a biblioteca apriori para a execução da opção de Apriori, para isso rode o seguinte comando:
 
-```git clone https://github.com/FelipeNicolettiRMario/explore-basket.git```
+```git clone https://github.com/FelipeNicolettiRMario/apriori.git```
 
 ## Setando Variáveis de ambiente
 
